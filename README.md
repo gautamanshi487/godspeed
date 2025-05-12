@@ -1,7 +1,31 @@
 # godspeed
+
+# GS Documentation Embedder + RAG Agent (Godspeed Framework)
+
+This project is a Retrieval-Augmented Generation (RAG) solution built using the Godspeed framework. It allows users to ingest GitHub documentation or local files into a vector database and query them using natural language powered by LLMs.
+
+ Bonus: Built using the Godspeed Framework as specified in the assignment.
+
+---
+
 # Vector Search App
 
 This is a FastAPI application that provides a vector search functionality. It allows users to upload and process GitHub repositories, and then query the processed documents using a natural language interface.
+
+
+## Project Structure
+
+```
+├── app/               # Contains API code and logic
+├── repo_clone/        # Temporary folder for cloned GitHub docs
+├── .env               # Environment variables (e.g., OpenAI key)
+├── .gitignore
+├── requirements.txt   # Python dependencies
+├── run.sh             # Startup script
+├── gs_rag_env/        # Virtual environment folder
+```
+
+---
 
 ## Features
 
