@@ -76,3 +76,7 @@ def query_vector(text: str, top_k: int = 5):
     embedding = convert_text_to_embeddings(text)
     results = query_documents(embedding, top_k=top_k)
     return results
+#  ADD THIS BLOCK TO START THE SERVER
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
